@@ -1,0 +1,132 @@
+/* The layout is done. Things I learned from it
+
+1- The values are hard-coded. Will try to make it more responsive by using REM or percentages
+2- Design and font is crucial. They can dramatically change the layout. Learn the basics of design.
+3- Refactor it. A lot of code can be trimmed down when you pay attention to the things that are related.
+    you can just maniputate them all together instead doing it individually. Work on that
+4- CREATE CREATE CREATE- A gram of action > a ton of theory. 
+    No amount of videos, tutorials or code along will come close to the actual work you put in. Google when you sget tuck,
+    watch tutorial videos of the things that you don't know. Thats it. Thats the secret of becoming best at what you do.
+    Put in the work and show it in public.
+
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+.container{
+    width: 350px;
+    margin: auto;
+    padding: 20px;
+
+}
+
+.card{
+    width: 250px;
+    margin: auto;
+    
+}
+
+.sedan{
+    background-color: hsl(31, 77%, 52%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.suv{
+    background-color: hsl(184, 100%, 22%);
+}
+
+.luxary{
+    background-color: hsl(179, 100%, 13%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.heading{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    letter-spacing: 1.1px;
+    padding: 10px;
+}
+
+.intro{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    padding: 10px;
+    line-height: 1.5;
+    font-family: 'Lexend Deca', sans-serif;
+
+}
+
+.content{
+    padding-left: 20px;
+}
+
+
+.logo{
+    margin: 30px 20px 10px 20px;
+}
+
+.btn{
+    text-align: center;
+    padding: 10px 25px;
+    border-radius: 60px;
+    border: 1.5px solid white;
+    margin: 30px 0 30px 20px;
+    color: white;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-sedan{
+    color: hsl(31, 77%, 52%);
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-suv{
+    color: hsl(184, 100%, 22%);
+    font-weight: bold;
+    background-color: white;
+}
+
+.btn-luxary{
+    color: hsl(179, 100%, 13%);
+    font-weight: bold;
+    background-color: white;
+}
+
+@media (min-width:500px){
+    .container{
+        width: 800px;
+        display:flex;
+        margin: 100px auto;
+    }
+
+    .card{
+        width:600px;
+        border-radius:0 ;
+    }
+
+    .logo{
+        margin-left: 35px;
+    }
+
+    .content{
+        margin-left: 20px;
+    }
+
+    .btn{
+        margin-top: 60px;
+        margin-left: 35px;
+    }
+}
